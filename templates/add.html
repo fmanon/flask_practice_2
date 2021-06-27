@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Inventory Tracker</title>
+    </head>
+    <body>
+      <h1>Welcome to the Inventory Tracker</h1>
+      <p>Pretty self explanatory - we track inventory over here.</p>
+      <p>What type of inventory, you (didn't) ask?  Well, groceries, of course!</p>
+      <p>Feel free to add inventory items of your own to the database by clicking on the "Add to Inventory" button below.</p>
+      <p>Enjoy!</p>
+      <h1>-----------------------------------------------------------------------------</h1>
+      <form method="post" action="/add">
+
+        <label for="date"> Date:</label>
+        <input type="date" name="date" value="">
+        <br>
+        <br>
+        <label for="item"> Item:</label>
+        <input type="text" name="name" value="">
+        <br>
+        <br>
+        <label for="price"> Est. Price:</label>
+        <input type="number" name="price" value="">
+        <br>
+        <br>
+        <label for="bar_code"> Bar Code:</label>
+        <input type="number" name="bar_code" value="">
+        <br>
+        <h1>-----------------------------------------------------------------------------</h1>
+        <br>
+        <input type="submit" value="Add to Inventory">
+
+        </form>
+    </body>
+</html>
