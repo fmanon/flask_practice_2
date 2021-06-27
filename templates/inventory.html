@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Inventory Tracker</title>
+    </head>
+    <body>
+      <h1>Online Inventory Tracker</h1>
+      <h1>----------------------------------------------------------------------------</h1>
+      <h3>Current Inventory List</h3>
+      <h1>----------------------------------------------------------------------------</h1>
+      <div class="event-list">
+        <ul>
+          {% for item in events %}
+            <li>{{ item.date }} || {{ item.item }} || {{ item.price }} || {{ item.bar_code }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </body>
+</html>
